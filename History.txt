@@ -2,6 +2,7 @@
 * 1 minor enhancement
   * fix japanese translation for Publication Date 
   * Added publication_place to document schema
+  * Added stub locale files for additional languages
 
 === 1.1.8 2010-03-08
 * 1 minor enhancements

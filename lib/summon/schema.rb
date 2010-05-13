@@ -66,7 +66,7 @@ module Summon
       end
       
       def locale
-        @service.locale
+        @service.locale.gsub(/-/, "")
       end
       
       def translate(value)

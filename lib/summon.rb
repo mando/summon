@@ -8,9 +8,12 @@ require 'json'
 module Summon
   VERSION = "1.1.9"
   DEFAULT_LOCALE = 'en'
-  require 'summon/locales/en'
-  require 'summon/locales/fr'
-  require 'summon/locales/jp'
+  
+  locale_dir = File.dirname(__FILE__) + '/summon/locales'
+  Dir["#{locale_dir}/*.rb"].each { |file| 
+    require file
+  }
+
 
   require 'summon/log'
   require 'summon/service'
